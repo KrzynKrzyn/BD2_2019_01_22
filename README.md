@@ -1,4 +1,4 @@
 # Bazy Danych 2 - projekt
 
-Projekt zrealizowany przez 4 osoby z u¿yciem PostgreSQL oraz Java Spring.
-Wiêcej informacji w pliku z dokumentacj¹.
+Projekt bazy danych dla firmy transportowej zrealizowany przez 4 osoby z uÅ¼yciem PostgreSQL oraz Java Spring.
+WiÄ™cej informacji w pliku z dokumentacjÅ¡.
