@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BD2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="packagestatus.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="w3-top">
+	  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+	    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"></a>
+	    <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+        <a href="/packages" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Paczki</a>
+	    <a href="/showOrders" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Zamówienia</a>
+	    <a href="/requestOrder" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Nowe zamówienie</a>
+	  	<a href="/course" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Kursy</a>
+	 	<a href="/packagestatus" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Dodaj status</a>
+ 		<a href="/report" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Raporty</a>
+ 	 </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:64px 16px">
+        <h1 class="w3-margin w3-jumbo">Welcome to Hacksiorex</h1>
+        <h1 class="w3-margin">We Are Heading Forward. What About You?</h1>
+    </header>
+    
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+        <div class="w3-twothird">
+            <h1>Aktualizacja statusu paczki</h1>
+            <div>
+                        <p>Paczki</p>
+            <div id="packages" class="w3-text-grey">
+                <input class="w3-input package_id" type="text" placeholder="Numer paczki">
+                <br/>
+            </div>
+            <button id="new_package"><i>Kolejna paczka</i></button>
+            
+                <br/><br/><a>Nowy status paczek:</a>
+                <select class="w3-input" id="status">
+                        <option value="Przyjęta">Przyjęta</option>
+                        <option value="W magazynie">W magazynie</option>
+                        <option value="W trakcie dostawy">W trakcie dostawy</option>
+                        <option value="Dostarczono">Dostarczono</option>
+                </select>
+                <br/>
+                <input class="w3-input" type="text" id="course_id" placeholder="Identyfikator kursu">
+                <br/>
+
+                <p>Adres zmiany statusu</p>
+                <input class="w3-input" type="text" id="city" placeholder="Miasto">
+                <input class="w3-input" type="text" id="street" placeholder="Ulica">
+                <input class="w3-input" type="text" id="building_number" placeholder="Numer budynku">
+                <br/>
+
+            </div>
+
+            <button id="new_status"><i>Aktualizuj status</i></button>
+        </div>
+        <div class="w3-third w3-center">
+            <i class="fa fa-cloud w3-padding-64 w3-text-red" style="font-size:128px;"></i>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
